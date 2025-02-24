@@ -1,0 +1,19 @@
+#cards {
+    padding-top: 4vh;
+    padding-left: 10%;
+    height: 90%;
+    width: 90%;
+    max-width: 100%;
+    gap: 10px; 
+}
+
+
+.projetos{
+    opacity: 0.85;
+}
+
+:host ::ng-deep .p-button,
+:host ::ng-deep .p-button {
+    background-color: rgba(80, 80, 80, 0.77) !important;
+    color: white !important;
+}

@@ -1,0 +1,16 @@
+#card{
+    background-color: rgba(216, 216, 216, 0.429);
+    border: 0.6px groove rgba(218, 209, 209, 0.647);
+    border-radius: 10px;
+}
+
+#img_perfil{
+    width: 40%;
+    height: 40%;
+    padding: 2vh !important;
+    margin: 0 !important;
+}
+
+.img_card{
+    border-radius: 10px;
+}

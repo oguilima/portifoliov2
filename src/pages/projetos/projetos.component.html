@@ -1,0 +1,10 @@
+<div id="cards">
+    <p-carousel [value]="projetos" [numVisible]="3" [numScroll]="1" [circular]="true" autoplayInterval="9000">
+        <ng-template let-projeto #item>
+            <app-card-project class="projetos" [projeto]="projeto"></app-card-project>
+        </ng-template>
+    </p-carousel>
+</div>
+
+
+<app-menu></app-menu>
