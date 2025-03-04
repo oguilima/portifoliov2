@@ -2,7 +2,7 @@
     <p-card [style]="{ width: '25rem', overflow: 'hidden' }">
         <ng-template #header>
             <img alt="Card" class="w-full img_project"
-                [src]="projeto.img" />
+                [src]="'http://localhost:3000' + projeto.imagemUrl" />
         </ng-template>
         <ng-template #title> {{projeto.title}} </ng-template>
         <ng-template #subtitle> {{projeto.cliente}} </ng-template>

@@ -1,7 +1,7 @@
 import { Tecnologia } from "./tecnologia"
 
 export interface Projeto{
-    img: string,
+    imagemUrl: string,
     title: string,
     cliente: string,
     description: string,

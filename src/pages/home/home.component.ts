@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { MenuComponent } from '../../components/menu/menu.component';
 import { ApresentacaoComponent } from '../../components/apresentacao/apresentacao.component';
 
 @Component({
@@ -7,7 +6,7 @@ import { ApresentacaoComponent } from '../../components/apresentacao/apresentaca
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   standalone: true,
-  imports: [MenuComponent, ApresentacaoComponent]
+  imports: [ApresentacaoComponent]
 })
 export class HomeComponent {
 

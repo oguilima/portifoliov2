@@ -14,7 +14,7 @@ export class CardProjectComponent {
   constructor(){}
 
   @Input() projeto: Projeto = {
-    img: "",
+    imagemUrl: "",
     title: "",
     cliente: "",
     description: "",

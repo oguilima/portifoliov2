@@ -1,30 +1,28 @@
-import { Component } from '@angular/core';
-import { MenuComponent } from "../../components/menu/menu.component";
+import { Component, OnInit } from '@angular/core';
 import { CardProjectComponent } from "../../components/card-project/card-project.component";
 import { CommonModule } from '@angular/common';
 import { CarouselModule } from 'primeng/carousel';
 
 import { Projeto } from '../../interfaces/projeto';
+import { ProjetosService } from '../../services/projetos.service';
 
 @Component({
   selector: 'app-projetos',
-  imports: [MenuComponent, CardProjectComponent, CommonModule, CarouselModule],
+  imports: [ CardProjectComponent, CommonModule, CarouselModule],
   templateUrl: './projetos.component.html',
   styleUrl: './projetos.component.css'
 })
-export class ProjetosComponent {
-  constructor() { }
+export class ProjetosComponent implements OnInit {
+  constructor(private projetosService: ProjetosService) { }
 
-  projetos: Projeto[] = [
-    {
-      img: "assets/images/cotacaoEletronica.jpg",
-      title: "Portal dos Fornecedores",
-      cliente: "Cassi",
-      description: "O Portal de Fornecedores tem como objetivo ser uma plataforma que conecta os fornecedores da Cassi com os compradores, onde é possível realizar a cotação e negociação dos processos de compras e contratos, onde é realizado integrações com o ERP Protheus.",
-      github: "tst",
-      tecnologias: []
-    }
-  ]
+  ngOnInit(): void {
+    this.projetosService.getProjects().subscribe({
+      next: (projetos) => this.projetos = projetos,
+      error: (err) => console.error('Erro ao buscar projetos', err),
+    });
+  }
+
+  projetos: Projeto[] = []
 
 
 }

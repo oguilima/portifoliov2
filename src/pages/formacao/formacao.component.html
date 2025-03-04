@@ -1,0 +1,36 @@
+<div id="cards">
+    <p-stepper [value]="formacoes.length">
+        <p-step-item *ngFor="let formacao of formacoes; let i = index"
+            [value]="i+1">
+            <p-step>{{formacao.nome}}</p-step>
+            <p-step-panel>
+                <ng-template #content>
+                    <div class="card-formacao">
+                        <div class="div-img">
+                            <img class="img_formacao"
+                                src="assets/images/ha.jpeg" alt>
+                        </div>
+                        <div class="div-content">
+                            <div class="flex flex-col h-48">
+                                <p-fieldset [legend]="formacao.nome">
+                                    <p class="m-0">
+                                        {{formacao.descricao}}
+                                    </p>
+                                </p-fieldset>
+
+                                <p-fieldset legend="Datas">
+                                    Início: {{formacao.dataInicio}} | Fim:
+                                    {{formacao.dataFim}}
+                                </p-fieldset>
+
+                                <p-fieldset legend="Tipo">
+                                  {{formacao.tipo}}
+                                </p-fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-step-panel>
+        </p-step-item>
+    </p-stepper>
+</div>
