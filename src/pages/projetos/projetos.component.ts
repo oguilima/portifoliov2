@@ -13,6 +13,8 @@ import { ProjetosService } from '../../services/projetos.service';
   styleUrl: './projetos.component.css'
 })
 export class ProjetosComponent implements OnInit {
+  projetos: Projeto[] = []
+
   constructor(private projetosService: ProjetosService) { }
 
   ngOnInit(): void {
@@ -22,7 +24,6 @@ export class ProjetosComponent implements OnInit {
     });
   }
 
-  projetos: Projeto[] = []
 
 
 }

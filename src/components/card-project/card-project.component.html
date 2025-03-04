@@ -10,7 +10,7 @@
            {{projeto.description}}
         </p>
         <ng-template #footer>
-            <p-button label="Git Hub" icon="pi pi-github"  />
+            <p-button *ngIf="projeto.github" (onClick)="redir(projeto.github)" label="Git Hub" icon="pi pi-github"  />
         </ng-template>
     </p-card>
 </div>
