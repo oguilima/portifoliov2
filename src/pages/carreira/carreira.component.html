@@ -6,7 +6,7 @@
                 <ng-template #content>
                     <div class="card-carreira">
                         <div class="div-img">
-                            <img class="img_carreira" src="assets/images/ha.jpeg" alt="">
+                            <img class="img_carreira" [src]="trabalho.img" alt="">
                         </div>
                         <div class="div-content">
                             <div class="flex flex-col h-48">
@@ -18,13 +18,17 @@
 
                                 <p-fieldset legend="Datas">
                                     Início: {{trabalho.dataInicio}} | Fim: {{trabalho.dataFim}}
-                                 </p-fieldset>
+                                </p-fieldset>
 
                                 <p-fieldset legend="Tecnologias Utilizadas">
-                                   teste
+                                    <ul>
+                                        <li *ngFor="let tech of trabalho.tecnologiasUtilizadas">
+                                            {{ tech.techName }}
+                                        </li>
+                                    </ul>
                                 </p-fieldset>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </ng-template>
             </p-step-panel>

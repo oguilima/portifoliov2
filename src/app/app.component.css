@@ -5,8 +5,8 @@ html, body {
 }
 
 .app {
-    background: url('https://www.freecodecamp.org/news/content/images/size/w2000/2022/02/pexels-negative-space-169573.jpg') no-repeat center center fixed;
-    background-size: cover; /* Faz a imagem cobrir toda a tela */
-    width: 100vw; /* 100% da largura da tela */
-    height: 100vh; /* 100% da altura da tela */
+    background-image: url('/assets/images/pexels-divinetechygirl-1181594.jpg');
+    background-size: cover; 
+    width: 100vw; 
+    height: 100vh;
 }

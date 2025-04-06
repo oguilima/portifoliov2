@@ -51,11 +51,11 @@ export class MenuComponent {
                 label: 'Carreira',
                 icon: 'https://parsefiles.back4app.com/JPaQcFfEEQ1ePBxbf6wvzkPMEqKYHhPYv8boI1Rc/8873f38f20e25050fd038334eca03f82_low_res_ContentAI_Lingvo.png',
                 redirTo: "/carreira"
-            },{
+            }/*,{
                 label: 'Contato',
                 icon: 'https://parsefiles.back4app.com/JPaQcFfEEQ1ePBxbf6wvzkPMEqKYHhPYv8boI1Rc/87bba3ec0c6584e3d7376cc764bf608a_low_res_Google_Chat.png',
-                redirTo: ""
-            }
+                redirTo: "/contato"
+            }*/
         ];
     }
 

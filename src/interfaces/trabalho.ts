@@ -5,5 +5,6 @@ export interface Trabalho {
     descricao: string,
     dataInicio: string,
     dataFim: string,
-    tecnologiasUtilizadas: Tecnologia[]
+    tecnologiasUtilizadas: Tecnologia[],
+    img?: string
 }

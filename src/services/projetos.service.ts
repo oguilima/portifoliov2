@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ProjetosService {
 
-  private readonly apiUrl = 'http://192.168.15.11:3000/projetos';
+  private readonly apiUrl = 'https://portifolio-backend-if7f.onrender.com/projetos';
 
   constructor(private http: HttpClient) { }
 

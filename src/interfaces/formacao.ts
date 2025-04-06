@@ -3,5 +3,6 @@ export interface Formacao {
     tipo: string,
     descricao: string,
     dataInicio: string,
-    dataFim: string
+    dataFim: string,
+    img: string
 }

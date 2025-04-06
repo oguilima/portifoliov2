@@ -6,3 +6,7 @@
 :host ::ng-deep .card {
     background-color: rgba(240, 248, 255, 0.241) !important;
 }
+
+.mt-1{
+    margin-top: 1vh;
+}
