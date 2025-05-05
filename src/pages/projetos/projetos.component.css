@@ -17,3 +17,8 @@
     background-color: rgba(80, 80, 80, 0.77) !important;
     color: white !important;
 }
+
+.loading{
+    margin-left: 45%;
+    margin-top: 15%;
+}

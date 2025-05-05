@@ -1,9 +1,11 @@
 <div id="cards">
-    <p-carousel [value]="projetos" [numVisible]="3" [numScroll]="1" [circular]="true" autoplayInterval="9000">
+    <p-carousel *ngIf="!loading" [value]="projetos" [numVisible]="3" [numScroll]="1" [circular]="true" autoplayInterval="9000">
         <ng-template let-projeto #item>
             <app-card-project class="projetos" [projeto]="projeto"></app-card-project>
         </ng-template>
     </p-carousel>
+
+    <p-progress-spinner class="loading" *ngIf="loading" ariaLabel="loading" />
 </div>
 
-<p-progress-spinner *ngIf="loading" ariaLabel="loading" />
+
