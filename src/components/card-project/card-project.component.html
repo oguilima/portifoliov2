@@ -1,31 +1,29 @@
 <div class="flex items-center justify-center card">
-    <p-card [style]="{ width: '25rem', overflow: 'auto', 'max-height': '90vh' }">
-      <ng-template #header>
-        <img alt="Card" class="w-full img_project"
-          [src]="'https://portifolio-backend-if7f.onrender.com' + projeto.imagemUrl" />
-      </ng-template>
-  
-      <ng-template #title> {{ projeto.title }} </ng-template>
-      <ng-template #subtitle> {{ projeto.cliente }} </ng-template>
-  
-      <p>
-        {{ projeto.description }}
-      </p>
-  
-      <div class="mt-1">
-        <h4 class="font-semibold mb-1">Tecnologias utilizadas:</h4>
-        <div style="max-height: 10rem; overflow-y: auto;">
-          <ul class="list-disc pl-5 pr-2">
-            <li *ngFor="let tech of techsParsed">
-              <strong>{{ tech.name }}:</strong> {{ tech.description }}
-            </li>
-          </ul>
-        </div>
+  <p-card [style]="{ width: '25rem', overflow: 'auto', 'max-height': '90vh' }">
+    <ng-template #header>
+      <img alt="Card" class="w-full img_project" [src]="projeto.imagemUrl" />
+    </ng-template>
+
+    <ng-template #title> {{ projeto.title }} </ng-template>
+    <ng-template #subtitle> {{ projeto.cliente }} </ng-template>
+
+    <p>
+      {{ projeto.description }}
+    </p>
+
+    <div class="mt-1">
+      <h4 class="font-semibold mb-1">Tecnologias utilizadas:</h4>
+      <div style="max-height: 10rem; overflow-y: auto;">
+        <ul class="list-disc pl-5 pr-2">
+          <li *ngFor="let tech of techsParsed">
+            <strong>{{ tech.name }}:</strong> {{ tech.description }}
+          </li>
+        </ul>
       </div>
-  
-      <ng-template #footer>
-        <p-button *ngIf="projeto.github" (onClick)="redir(projeto.github)" label="Git Hub" icon="pi pi-github" />
-      </ng-template>
-    </p-card>
-  </div>
-  
+    </div>
+
+    <ng-template #footer>
+      <p-button *ngIf="projeto.github" (onClick)="redir(projeto.github)" label="Git Hub" icon="pi pi-github" />
+    </ng-template>
+  </p-card>
+</div>
