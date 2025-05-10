@@ -6,5 +6,5 @@ export interface Projeto{
     cliente: string,
     description: string,
     github?: string,
-    techs: string
+    techs: Array<Tecnologia>
 }

@@ -15,7 +15,7 @@
       <h4 class="font-semibold mb-1">Tecnologias utilizadas:</h4>
       <div style="max-height: 10rem; overflow-y: auto;">
         <ul class="list-disc pl-5 pr-2">
-          <li *ngFor="let tech of techsParsed">
+          <li *ngFor="let tech of projeto.techs">
             <strong>{{ tech.name }}:</strong> {{ tech.description }}
           </li>
         </ul>

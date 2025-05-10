@@ -1,4 +1,4 @@
 export interface Tecnologia {
-    techName: string,
-    techDescription?: string
+    name: string,
+    description?: string
 }

@@ -37,18 +37,18 @@ export class CarreiraComponent {
       dataFim: "09/2023",
       img: 'assets/images/mfx.jpeg',
       tecnologiasUtilizadas: [
-        { techName: "Fluig" },
-        { techName: "Desenvolvimento Full Stack" },
-        { techName: "jQuery" },
-        { techName: "TOTVS Protheus" },
-        { techName: "Node.js" },
-        { techName: "MySQL" },
-        { techName: "Git" },
-        { techName: "SQL" },
-        { techName: "JavaScript" },
-        { techName: "Microsoft SQL Server" },
-        { techName: "React.js" },
-        { techName: "Bibliotecas JavaScript" }
+        { name: "Fluig" },
+        { name: "Desenvolvimento Full Stack" },
+        { name: "jQuery" },
+        { name: "TOTVS Protheus" },
+        { name: "Node.js" },
+        { name: "MySQL" },
+        { name: "Git" },
+        { name: "SQL" },
+        { name: "JavaScript" },
+        { name: "Microsoft SQL Server" },
+        { name: "React.js" },
+        { name: "Bibliotecas JavaScript" }
       ]
       
     }, {
@@ -57,20 +57,20 @@ export class CarreiraComponent {
       dataInicio: "10/2023",
       dataFim: "-",
       tecnologiasUtilizadas: [
-        { techName: "Angular" },
-        { techName: "TypeScript" },
-        { techName: "jQuery" },
-        { techName: "Fluig" },
-        { techName: "TOTVS Protheus" },
-        { techName: "Node.js" },
-        { techName: "Git" },
-        { techName: "Spring Boot" },
-        { techName: "JavaScript" },
-        { techName: "Microsoft SQL Server" },
-        { techName: "Protheus" },
-        { techName: "Java" },
-        { techName: "Bibliotecas JavaScript" },
-        { techName: "SQL" }
+        { name: "Angular" },
+        { name: "TypeScript" },
+        { name: "jQuery" },
+        { name: "Fluig" },
+        { name: "TOTVS Protheus" },
+        { name: "Node.js" },
+        { name: "Git" },
+        { name: "Spring Boot" },
+        { name: "JavaScript" },
+        { name: "Microsoft SQL Server" },
+        { name: "Protheus" },
+        { name: "Java" },
+        { name: "Bibliotecas JavaScript" },
+        { name: "SQL" }
       ]
       ,
       img: 'assets/images/totvs.jpeg'
